@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+@layer base {
+  body {
+    /* This sets your background and text color globally */
+    background-color: #fdfcfb;
+    color: #262626;
+    font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* This creates that "High-end" Glass look for your panels */
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  /* This creates your signature Sage Green */
+  .sage-bg {
+    background-color: #84a98c !important;
+    color: white !important;
+  }
+
+  .sage-text {
+    color: #52796f;
+  }
+
+  .elegant-shadow {
+    box-shadow: 0 20px 25px -5px rgba(132, 169, 140, 0.1);
+  }
+}
