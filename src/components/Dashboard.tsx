@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/dashboard-stats');
+      const response = await fetch('https://rae-beauty-backend.onrender.com/');
       const data = await response.json();
       setStats(data);
     } catch (err) {
